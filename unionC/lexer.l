@@ -26,7 +26,7 @@ identif   ({letra}|_)({letra}|{digito})
 /* rules */
 %%
 
-[ \n\t\r\s]+        { ;} // Ignorar whitespaces
+[ \n\t\r]+        { ;} // Ignorar whitespaces
 {numint}        {yylval.valint = atoi(yytext); lineCount++; return INT; }
 {numfloat}      {yylval.valfloat = atof(yytext); lineCount++; return FLOAT;}
 {identif}       {strcpy(yylval.string, yytext); lineCount++; return IDENTIF;}
