@@ -2,5 +2,5 @@ program lalg;
 {}
 var a, minha_variavel: integer;
 begin
-readd(a,@,1.o23);
+readd(a,@,2.23);
 end.

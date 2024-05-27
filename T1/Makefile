@@ -7,7 +7,7 @@ lex.yy.c: lexer.l
 	flex lexer.l
 
 run: 
-	./out.exe < ./in/6.in
+	./out.exe < ./in/1.in
 
 clean: 
 	rm lex.yy.c out *.o
