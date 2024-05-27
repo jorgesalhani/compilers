@@ -1,6 +1,8 @@
 %{
   // Contador para indicar a linha (útil para análise de erro)
   int lineCount = 1; 
+
+  // Tamanho maximo para token identificadores (id)
   int MAX_TOKEN_SIZE = 10;
 %}
 
@@ -45,7 +47,7 @@ id            ({letra}|_)({letra}|{digito}|_)*
 malformfloat  {digito}*\..{digito}
 num           {digito}+
 malformnum    {num}[^{digito}]{id}+
-comment       \{.+\}
+comment       \{.*\}
 
 /**/
 
