@@ -1,0 +1,7 @@
+program lalg;
+{outro teste com comentario longo}
+var a, minha_variavel: integer;
+begin
+const b, min_var: float;
+readd(a,$$,1002);
+end.
